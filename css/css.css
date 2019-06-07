@@ -1,0 +1,482 @@
+*{margin:0;padding: 0;
+font-family: 'aileronlight';
+scroll-behavior: smooth; }
+body{
+	background-color: rgb(242, 242, 242);
+}
+/*.texto{
+	position: absolute;
+	color: white;
+	z-index: 12;
+}*/
+h2 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+h3 {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+h4{
+	display: block;
+	font-size: 1.17em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;
+}
+/*Header+navbar*/
+.f{
+	position:fixed;
+	background-color: rgb(242, 242, 242);
+	width: 100%;
+	z-index: 2;
+}
+/*navbar*/
+.w{
+	justify-content: space-around;
+	list-style-type: none;
+	
+}
+
+.w2{
+	display:none;
+	position: fixed;
+	background-color: rgb(242, 242, 242);
+	padding: 15px;
+}
+a{
+	text-decoration:none;
+	color: black;
+	font-family: 'aileronsemibold';
+}
+a:hover{
+	text-decoration:none;
+	color:rgb(128, 128, 128);
+}
+li{
+	display: block;
+}
+#s2:hover .w2{
+	display:block;
+}
+/*Contenido*/
+.texto{
+	margin-top:25px; 
+	margin-bottom: 25px;
+}
+.cursiva{
+	font-style: italic;
+}
+.cursivaobras{
+	font-style: italic;
+}
+.b{
+	background:white;
+	height: auto;
+}
+#mountain{
+	padding-top: 100px;
+	position: relative;
+}
+.imagengrande{
+	width: 100%;
+	box-sizing: border-box;
+}
+
+/*nuevo contenido de columnas en cuadros index*/
+.pad{
+	padding: 15px;
+}
+
+
+.imagenchica2{
+	align-items: center;
+}
+
+
+.cont{
+	display:flex;
+	flex-direction: column;
+}
+.item{
+	box-sizing: border-box;
+	
+	width:75%;
+}
+.itemautor{
+	width: 100%;
+	/*border: solid black;*/
+}
+.itembienvenido{
+	width: 95%;
+}
+.padautor{
+	padding-left: 0;
+}
+.padautor h3,.padautor p{
+	font-size:40%; 
+}
+.padautor p{
+	font-size:90%; 
+}
+
+#navi{
+	position: sticky;
+	box-sizing: border-box;
+	width: 100%;
+}
+/*footer*/
+#pie{
+	right:0px;
+	bottom: 0px;
+	width: 100%;
+	height: 100px;
+	text-align: right;
+	padding-top: 2%;
+	padding-bottom:3%; 
+	padding-right:5%;
+}
+#pie ul li{
+	left:0px;
+	text-align: center;
+	justify-content: space-around;
+}
+.leftt{
+	text-align: left;
+}
+/*Ancla arriba*/
+#scroll{
+	position: fixed;
+	right:10px;
+	bottom: 10%;
+	text-align: right;
+	padding-right: 10%;
+	opacity: 0.6; 
+	width:30%;
+}
+#scroll a{
+
+}
+#scroll img{
+	width:30%;
+}
+/*form*/
+#formulario{
+	background:white;
+	padding: 15px;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto; 
+	margin-top: 1%;
+	margin-bottom: 5%;
+}
+	#formulario div{
+		margin-top:15px;
+		
+	}
+		#formulario input,#formulario textarea{
+			width: 100%;
+			padding: 3%;
+			color: rgb(38, 38, 38);
+			box-sizing: border-box;
+			font-family: 'aileronregular';
+
+		}
+	#formulario textarea{
+		height: 160px;
+		resize: none;
+	}
+	#formulario input[type="checkbox"]{
+		width: auto;
+	}
+
+	#formulario input[type="submit"]{
+		width: 40%;
+		color: black;
+		border-radius: 10%;
+	}
+/*animation*/
+@keyframes letras{
+	0%{
+		opacity: 0.2;
+	}
+	100%{
+		opacity: 0.6;
+	}
+}
+@keyframes bienvenido{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes publi{
+	0%{
+		transform: scale(1,1);
+		opacity: 1;
+	}
+	50%{
+		transform: scale(1,2);
+		opacity: 0.6;
+	}
+	100%{
+		transform: scale(1,1);
+		opacity: 1;
+	}
+}
+@keyframes cortinar{
+	0%{
+		transform: translate(0,0);
+	}
+	
+	100%{
+		transform: translate(-1000px,0);
+	}
+}
+@keyframes cortinal{
+	0%{
+		transform: translate(0,0);
+	}
+	
+	100%{
+		transform: translate(1000px,0);
+
+	}
+}
+@keyframes cortinas{
+	0%{
+		z-index: 20;
+	}
+	
+	100%{
+		z-index: -100;
+	}
+}
+
+
+
+.anclaabajo{
+	transform: rotate(180deg);
+	position: absolute;
+	text-align: center;
+	min-height: 50px;
+	max-height: 200px;
+	width: 100%;
+	background-color: rgb(0,0,0,0.3);
+	bottom: 1%;
+}
+
+.anclaabajo img{
+	width: 10%;
+}
+/*banner img-texto*/
+.libreimg{
+	width: 100%;
+	position: absolute;
+	animation: bienvenido 1s linear;
+	padding-top: 10%;
+	padding-bottom: 10%;
+
+
+}
+.libresize{
+	/*font-size: 100px;*/
+	color: white;
+	text-align: center;
+	background: rgb(0,0,0,0.4); 
+}
+/*exposicion*/
+#viejas{
+	margin-top: 170px;
+	margin-bottom: 50px;
+}
+/*publicidad Newsletter*/
+.publicidad{
+	animation: publi 6s ease-out infinite;
+	padding: 15px;
+	margin-bottom: 50px;
+}
+/*texto el arte de vivir*/
+.animate1{
+	animation: letras 12s alternate infinite
+}
+
+
+
+/*titulo nombre cuadro Home(modif con mediaquery)*/
+.caja{
+		position:relative;
+		display: inline-block;
+		line-height: 0;
+		overflow:hidden;
+		 
+	}
+/*mapa ubicación*/
+.googlemaps{
+	width: 100%;
+	height:450px;
+    frameborder:0;
+	border:0;
+}
+/*telon bienvenido*/
+#cortinas{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	display: flex;
+	overflow: hidden;
+	animation: cortinas 4s linear;
+	animation-fill-mode: forwards;
+}
+#cortinaright{
+	position: relative;
+	right: 0;
+	width: 50%;
+	animation: cortinar 1s linear;
+	animation-fill-mode: forwards;
+}
+#cortinaleft{
+	position: relative;
+	left: 0;
+	width: 50%;
+	animation: cortinal 1s linear;
+	animation-fill-mode: forwards; 
+}
+/*botón formulario bienvenido*/
+.colorbutton{
+	background: gray;
+	border: gray;
+}
+.colorbutton:hover{
+	background: rgb(150,150,150);
+	border: rgb(150,150,150);
+}
+
+/*Tamaño responsive*/
+@media screen and (min-width: 1201px){
+	.antes{
+		display: block;
+	}
+	.despues{
+		display: none;
+	}
+	/*#contenedor{
+		width:1190px;
+	}*/
+	.libresize{
+		font-size: 100px;
+	}
+	.titulocaja{
+		position: absolute;
+		bottom:-100px;
+		transition: 0.5s ease all 1.2s;
+		background: rgb(255,255,255,0.6);
+		padding: 15px;
+	}
+	.caja:hover .titulocaja{
+		bottom:100px;
+		font-style:bold;
+	} 
+
+}
+@media screen and (min-width:991px) and (max-width: 1200px){
+		#formulario{
+			width: 80%;
+		}
+	.antes{
+		display: block;
+	}
+	.despues{
+		display: none;
+	}
+	.libresize{
+		font-size: 100px;
+	}
+	.titulocaja{
+		position: absolute;
+		bottom:-100px;
+		transition: 0.5s ease all 1.2s;
+		background: rgb(255,255,255,0.6);
+		padding: 15px;
+	}
+	.caja:hover .titulocaja{
+		bottom:100px;
+		font-style:bold;
+	}
+
+}
+@media (min-width:561px) and (max-width: 990px){
+	#formulario{
+		width: 100%;
+	}
+	.antes{
+		display: none;
+	}
+	.despues{
+		display: block;
+	}
+	.libresize{
+		font-size: 50px;
+	}
+	.titulocaja{
+		position: absolute;
+		bottom: 50%;
+		background: rgb(255,255,255,0.6);
+		font-style:bold;
+		padding: 15px;
+	}
+	#cortinas{
+		display: none;
+	}
+}
+
+@media (min-width:0px) and (max-width: 560px){
+	#formulario{
+		width: 100%;
+	}
+	.antes{
+		display: none;
+	}
+	.despues{
+		display: block;
+	}
+	.flexing{
+		flex:100%;
+		overflow: hidden;
+	}
+	.libresize{
+		font-size: 30px;
+	}
+	.titulocaja{
+		position: absolute;
+		bottom: 50%;
+		background:rgb(255,255,255,0.6);
+		font-style:bold;
+		padding: 15px; 
+	}
+	#cortinas{
+		display: none;
+	}
+	
+}
+
+/*.anchoslider{
+	width: 80%;
+}
+.posiciontext{
+	top: 60%;
+}*/
